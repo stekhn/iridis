@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Generate iridescent, grainy book cover backgrounds with flat typography. Every result is reproducible from its link." />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f1f5f9" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#020617" />
+    <title>Iridis | Iridescent book cover generator</title>
+    <script>
+      // Resolve the theme before first paint to avoid a flash. Mirrors src/theme.ts.
+      (function () {
+        try {
+          var t = localStorage.getItem('iridis.theme');
+          var dark = t === 'dark'
+            || ((t === 'system' || t === null) && matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        } catch (e) { /* leave the default (light) */ }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

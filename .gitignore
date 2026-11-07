@@ -1,0 +1,34 @@
+# dependencies / build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# logs
+*.log
+npm-debug.log*
+
+# system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*~
+
+# local sample renders (docs/ holds the committed ones)
+samples/
+
+# reference photos of published covers: local only, never committed
+images/

@@ -1,0 +1,22 @@
+<!-- Iridis mark: an iridescent tile with the Tabler "rainbow" icon. Mirrors RAINBOW_PATHS in src/components/Logo.tsx. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f48fb8"/>
+      <stop offset="0.38" stop-color="#a98bd8"/>
+      <stop offset="0.68" stop-color="#6a8fe2"/>
+      <stop offset="1" stop-color="#7ad4c2"/>
+    </linearGradient>
+    <radialGradient id="h" cx="0.85" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#fff2a8" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#fff2a8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="24" height="24" rx="5.5" fill="url(#g)"/>
+  <rect width="24" height="24" rx="5.5" fill="url(#h)"/>
+  <g transform="translate(2 2) scale(0.833)" fill="none" stroke="#fbfaf4" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 17c0 -5.523 -4.477 -10 -10 -10c-5.523 0 -10 4.477 -10 10"/>
+    <path d="M18 17a6 6 0 1 0 -12 0"/>
+    <path d="M14 17a2 2 0 1 0 -4 0"/>
+  </g>
+</svg>
