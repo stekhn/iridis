@@ -44,7 +44,8 @@ export default function App() {
       )}
 
       <main className="grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_22.5rem]">
-        <section className="panel !p-2" aria-label="Cover preview">
+        {/* Sticky on large screens: the cover stays in view while the controls column scrolls. */}
+        <section className="panel !p-2 lg:sticky lg:top-6 lg:self-start" aria-label="Cover preview">
           <CoverPreview state={state} layout={layout} fontsReady={fontStatus !== 'loading'} />
         </section>
         <div className="space-y-4">

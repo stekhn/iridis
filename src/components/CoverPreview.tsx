@@ -19,7 +19,7 @@ export const CoverPreview = memo(function CoverPreview({ state, layout, fontsRea
   return (
     <div
       ref={containerRef}
-      className="relative flex h-[62dvh] min-h-[20rem] w-full items-center justify-center overflow-hidden rounded-lg bg-canvas-bg lg:h-[calc(100dvh-10.5rem)] lg:min-h-[30rem]"
+      className="relative flex h-[62dvh] min-h-[20rem] w-full items-center justify-center overflow-hidden rounded-lg bg-canvas-bg lg:h-[calc(100dvh-8.5rem)] lg:min-h-[30rem]"
     >
       <canvas ref={canvasRef} role="img" aria-label={`Cover preview: ${label}`} className="block shadow-xl" />
     </div>
